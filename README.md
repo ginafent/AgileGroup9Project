@@ -1,4 +1,4 @@
-# AgileDevelopment_templateCWRepo
+# Agile Development Team 9
 AC31007/AC51003 Agile Software Engineering - Group Number 9
 
 Group Members:
