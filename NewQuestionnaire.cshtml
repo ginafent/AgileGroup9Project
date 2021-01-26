@@ -1,0 +1,138 @@
+﻿@page
+@model Questionairre.Pages.NewQuestionairreModel
+@{
+    ViewData["Title"] = "New Questionnaire";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Make a New Questionnaire</h1>
+    <p>On this page, you can make new questionnaires from scratch.</p>
+    <button class="btn btn-primary btn-lg">Let's get started!</button>
+</div>
+
+
+<!-- some stuff from here on out taken from https://www.w3schools.com/howto/default.asp -->
+<!-- to get the author and questionnaire's name-->
+<hr>
+<div class="form-group">
+    <label for="qAuthor">Author:</label>
+    <input type="text" class="form-control" id="qAuthor">
+</div>
+<div class="form-group">
+    <label for="qName">Questionnaire Name:</label>
+    <input type="text" class="form-control" id="qName">
+</div>
+
+<!-- needs fixed
+<div class="form-group pmd-textfield pmd-textfield-floating-label">
+    <label class="control-label" for="regular1">Date of Creation</label>
+    <input type="text" class="form-control" data-header-left="true" id="datepicker-left-header">
+</div>
+    -->
+<!-- need to make so that they can choose uo to 100 or smth-->
+<!-- to select the number of questions-->
+<div class="form-group">
+    <label for="qNumber">Number of Questions:</label>
+    <select class="form-control" id="qNumber">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="comment">Description:</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+<!-- to select whether a consent/privacy statement is needed and write it out, hides it if not needed-->
+<div class="form-group">
+    <label for="comment" id="privacy" display="block">Consent/Privacy Statement:</label>
+    <label> <input type="checkbox" value="" id="pCheck" onclick="hidePrivacy()">Doesn't need a consent/privacy statement</label>
+    <textarea class="form-control" rows="5" id="pTextarea"></textarea>
+</div>
+
+<script>
+    function hidePrivacy() {
+        // Get the checkbox
+        var checkBox = document.getElementById("pCheck");
+        // Get the output text
+        var text = document.getElementById("privacy");
+        var tarea = document.getElementById("pTextarea")
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true) {
+            text.style.display = "none";
+            tarea.style.display = "none";
+        } else {
+            text.style.display = "block";
+            tarea.style.display = "block";
+        }
+    }
+</script>
+
+</hr>
+
+<!-- need to make so the question template loops depending on the number of questions selected-->
+<!-- question template-->
+<hr>
+<h2>Question X</h2>
+<div class="radio">
+    <p>Question/Reply Type:</p>
+    <label><input type="radio" name="optradio" id="r1" checked>Text Question</label>
+</div>
+<div class="radio">
+    <label><input type="radio" name="optradio" id="r2">Multiple Choice Question - single answer</label>
+</div>
+<div class="radio">
+    <label><input type="radio" name="optradio" id="r3">Multiple Choice Question - multiple answers</label>
+</div>
+
+<!-- text question -->
+<div class="form-group">
+    <label for="comment" id="textQuestion" display="block">Question:</label>
+    <textarea class="form-control" rows="5" id="tTextarea"></textarea>
+</div>
+
+<!-- multiple choice question - 1 answer (radio buttons) -->
+<div class="form-group">
+    <label for="comment">Number of Possible Answers:</label>
+    <select class="form-control" id="rAnswerNumber">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <!-- need to make it so that the correct number of text inputs show up -->
+
+</div>
+
+<!-- need to make so the correct question type template shows up when they choose
+<script>
+    function questionChoice() {
+        // Get the checked choice
+        var radioBox1 = document.getElementById("r1");
+        var radioBox2 = document.getElementById("r2");
+        var radioBox3 = document.getElementById("r3");
+        // Get the output text
+        var text = document.getElementById("textQuestion");
+        var tarea = document.getElementById("tTextarea");
+
+        // If the checkbox is checked, display the output text
+        if (radioBox1.checked == true) {
+            text.style.display = "none";
+            tarea.style.display = "none";
+        } else {
+            text.style.display = "block";
+            tarea.style.display = "block";
+        }
+    }
+</script>
+-->
+
+</hr>
+
+
