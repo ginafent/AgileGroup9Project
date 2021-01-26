@@ -1,0 +1,17 @@
+﻿@page
+@model Questionairre.Pages.MakeNewModel
+@{
+    ViewData["Title"] = "Add New";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add a Questionairre</h1>
+    <p>On this page, you can either make a new questionairre from scratch or upload a pre-made one.</p>
+</div>
+
+
+    <div class="row justify-content-center">
+        <div class="col-2"> <button onClick="parent.location='https://localhost:44340/NewQuestionairre'" class="btn btn-primary btn-lg"> Make a Q</button></div>
+        <div class="col-2"><button class="btn btn-primary btn-lg">Upload a Q</button></div>
+    </div>
+
