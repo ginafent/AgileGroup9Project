@@ -1,0 +1,42 @@
+﻿@page
+@model Questionairre.Pages.NewQuestionairreModel
+@{
+    ViewData["Title"] = "New Questionairre";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Make a New Questionairre</h1>
+    <p>On this page, you can make new questionairres from scratch.</p>
+    <button class="btn btn-primary btn-lg">Let's get started!</button>
+</div>
+
+<hr>
+<div class="form-group">
+    <label for="qAuthor">Author:</label>
+    <input type="text" class="form-control" id="qAuthor">
+</div>
+<div class="form-group">
+    <label for="qName">Questionairre Name:</label>
+    <input type="text" class="form-control" id="qName">
+</div>
+
+<div class="form-group pmd-textfield pmd-textfield-floating-label">
+    <label class="control-label" for="regular1">Select Date and Time</label>
+    <input type="text" class="form-control" data-header-left="true" id="datepicker-left-header">
+</div>
+
+<div class="form-group">
+    <label for="qNumber">Number of Questions:</label>
+    <select class="form-control" id="qNumber">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</div>
+</hr>
+
+<hr>
+<h2>Question 1</h2>
+</hr>
