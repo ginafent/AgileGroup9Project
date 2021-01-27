@@ -1,0 +1,4 @@
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Release\emailtest.Form1.resources
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Release\emailtest.Properties.Resources.resources
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Release\emailtest.csproj.GenerateResource.cache
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Release\emailtest.csproj.CoreCompileInputs.cache

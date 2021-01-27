@@ -1,0 +1,10 @@
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.csprojAssemblyReference.cache
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.Form1.resources
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.Properties.Resources.resources
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.csproj.GenerateResource.cache
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.csproj.CoreCompileInputs.cache
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\bin\Debug\emailtest.exe.config
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\bin\Debug\emailtest.exe
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\bin\Debug\emailtest.pdb
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.exe
+C:\Users\Shaun Yap\Desktop\emailtest\emailtest\obj\Debug\emailtest.pdb
